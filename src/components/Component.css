@@ -1,0 +1,16 @@
+.data{
+    color:green;
+}
+.service{
+    border:1px solid black;
+    margin:20px;
+   
+    padding:10px;
+
+}
+.tablefull{
+    display: flex;
+    justify-content: center;
+    margin:50px auto;
+}
+

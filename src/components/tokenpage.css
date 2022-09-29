@@ -1,0 +1,59 @@
+.tokenpage{
+    background: url('../../public/assets/blackbg.jpg') center/cover no-repeat;
+}
+
+.card{
+    height: 300px;
+    width:400px;
+    
+    transition: all .5s ease-in;
+    display: flex;
+    border: 1px solid ghostwhite;
+    border-radius: 20px;
+    /* justify-content: center; */
+   
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+.link{
+    
+    text-decoration: none;
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 140px;
+    
+
+}
+
+#card1{
+    background: url('../../public/assets/w.jpg') center/cover no-repeat;
+}
+#card2{
+    background: url('../../public/assets/bajra.jpg') center/cover no-repeat;
+}
+#card3{
+    background: url('../../public/assets/paddy.jpg') center/cover no-repeat;
+}
+#card4{
+    background: url('../../public/assets/jowar.jpg') center/cover no-repeat;
+}
+
+.heading{
+    border:2px solid ghostwhite;
+    background:radial-gradient(rgb(55, 182, 23),green);
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    margin: 30px auto;
+    padding: 10px;
+    color: ghostwhite;
+    font-weight: bolder;
+}

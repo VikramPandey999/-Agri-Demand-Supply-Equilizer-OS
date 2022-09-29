@@ -1,0 +1,60 @@
+{
+  "name": "lbs_react_project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@google-pay/button-react": "^3.0.0",
+    "@mui/material": "^5.4.0",
+    "@stripe/react-stripe-js": "^1.7.0",
+    "@stripe/stripe-js": "^1.23.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "chart.js": "^3.7.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase": "^8.10.0",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^4.0.1",
+    "react-charts": "^3.0.0-beta.36",
+    "react-dom": "^17.0.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
+    "react-simple-charts": "^0.0.19",
+    "react-star-rating": "^1.4.2",
+    "react-stripe-checkout": "^2.6.3",
+    "react-to-print": "^2.14.4",
+    "stripe": "^8.203.0",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

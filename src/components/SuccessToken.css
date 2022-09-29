@@ -1,0 +1,11 @@
+.success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+#receiptbtn{
+    margin: 100px;
+}
+
