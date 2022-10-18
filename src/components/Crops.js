@@ -4,18 +4,20 @@ import "./Crops.css";
 import { props, useEffect } from "react";
 import { Navigate } from "react-router-dom";
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+
+// Payment Gateway NPM packages
 import StripeCheckout from "react-stripe-checkout";
 import GooglePayButton from "@google-pay/button-react";
+
 
 
 function Crops(props) {
 
   const [demand, setDemand] = useState(0);
   const [r_demand, setR_demand] = useState(demand);
-  const [produce,setProduce]=useState(0);
+  const [produce, setProduce] = useState(0);
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -80,18 +82,6 @@ function Crops(props) {
   const [disable, setDisable] = useState(true);
 
 
-
-
-  const handleInput = (e) => {
-    if (e.target.value === '') {
-      setDisable(true);
-    }
-    else {
-      setProduce(e.target.value);
-      setDisable(false);
-    }
-  }
-
   const makePayment = token => {
 
     let input = document.getElementById("id1").value
@@ -118,12 +108,24 @@ function Crops(props) {
       })
       .catch(
         alert("Hello Payment Error")
-        
-        
-        )
+
+
+      )
 
 
   }
+
+  const handleInput = (e) => {
+    if (e.target.value === '') {
+      setDisable(true);
+    }
+    else {
+      setProduce(e.target.value);
+      setDisable(false);
+    }
+  }
+
+
 
   if (!auth) {
     console.log(inputF.value);
@@ -220,19 +222,21 @@ function Crops(props) {
                 <hr />
                 <Typography class="container" id="modal-modal-description" sx={{ mt: 2 }}>
                   &emsp;&emsp; Fertilizer&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;&emsp;&emsp;
-                 375kg
+                  375kg
                 </Typography>
-                <hr/>
+                <hr />
                 <Typography class="container" id="modal-modal-description" sx={{ mt: 2 }}>
-                  &emsp;&emsp; Insurance&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;&emsp;&emsp; 
+                  &emsp;&emsp; Insurance&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;&emsp;&emsp;
                   40,000rs
                   {/* <span style={{color:'red'}}>(Assured Insurance)</span> */}
                 </Typography>
-                <hr/>
+                <hr />
                 <Typography class="container" id="modal-modal-description" sx={{ mt: 2 }}>
                   &emsp;&emsp; Seeds&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:&emsp;&emsp;&emsp; 100kg
                 </Typography>
               </div>
+
+{/* Payment Gateway Buttons and Modal */}
               <div class="modal-footer flex-center">
                 <StripeCheckout
                   stripeKey="pk_test_51KUAbVSBqbVFSEsjamFouBXi77tfqeITc8lXqXLOi3ouGqETLySLdPWGUVgZv8K6rKFI7rx9mUl76aQzvg3qAugL008y5pCiGz"
@@ -287,7 +291,7 @@ function Crops(props) {
                   }}
                   onLoadPaymentData={(paymentRequest) => {
                     console.log("Success", paymentRequest);
-                    
+
                   }}
                   onPaymentAuthorized={(paymentData) => {
                     console.log("Payment Authorization", paymentData);
@@ -299,6 +303,7 @@ function Crops(props) {
                   buttonType="short"
                 />
               </div>
+
 
             </Box>
           </Modal>
