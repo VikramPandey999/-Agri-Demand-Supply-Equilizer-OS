@@ -14,17 +14,17 @@ export default function Footer() {
           <span> Our Social Handlers!</span>
         </p>
         <div className="icons">
-          <a href="https://www.facebook.com/vesitedu/">
+          <a href="/">
             <i className="fa fa-facebook"></i>
           </a>
-          <a href="https://twitter.com/vesitedu">
+          <a href="/">
             <i className="fa fa-twitter"></i>
           </a>
-          <a href="https://www.linkedin.com/in/vesit">
+          <a href="/">
             <i className="fa fa-linkedin"></i>
           </a>
 
-          <a href="https://www.instagram.com/vesitedu">
+          <a href="/">
             <i className="fa fa-instagram"></i>
           </a>
         </div>
@@ -33,7 +33,7 @@ export default function Footer() {
         <div>
           <i className="fa fa-map-marker"></i>
           <p>
-            <span> Hashu Adwani Memorial Complex, Collector's Colony, Chembur</span> Mumbai, Maharashtra 400074
+            <span> FarmBuy</span> Maharashtra 400074
           </p>
         </div>
         <div>
@@ -43,7 +43,7 @@ export default function Footer() {
         <div>
           <i className="fa fa-envelope"></i>
           <p>
-            <a href="mailto:vesit@ves.ac.in"> 	vesit@ves.ac.in </a>
+            <a href="mailto:farmbuy00@gmail.com"> 	farmbuy00@gmail.com </a>
           </p>
         </div>
       </div>
